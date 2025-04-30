@@ -30,6 +30,8 @@ class InMemoryDB:
             raise MyDBError("Nothing to rollback")
         self.pending = None
 
+# testing purposes
+
 if __name__ == "__main__":
     db = InMemoryDB()
     print(db.get("A"))
